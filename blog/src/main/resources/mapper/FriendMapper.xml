@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chauncey.blog.dao.FriendMapper">
+  <resultMap id="BaseResultMap" type="com.chauncey.blog.model.Friend">
+    <constructor>
+      <idArg column="id" javaType="java.lang.Long" jdbcType="BIGINT" />
+      <arg column="blogaddress" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="blogname" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="create_time" javaType="java.util.Date" jdbcType="TIMESTAMP" />
+      <arg column="pictureaddress" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, blogaddress, blogname, create_time, pictureaddress
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_friend
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from t_friend
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.chauncey.blog.model.Friend">
+    insert into t_friend (id, blogaddress, blogname, 
+      create_time, pictureaddress)
+    values (#{id,jdbcType=BIGINT}, #{blogaddress,jdbcType=VARCHAR}, #{blogname,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{pictureaddress,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.chauncey.blog.model.Friend">
+    insert into t_friend
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="blogaddress != null">
+        blogaddress,
+      </if>
+      <if test="blogname != null">
+        blogname,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="pictureaddress != null">
+        pictureaddress,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="blogaddress != null">
+        #{blogaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="blogname != null">
+        #{blogname,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="pictureaddress != null">
+        #{pictureaddress,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.chauncey.blog.model.FriendExample" resultType="java.lang.Long">
+    select count(*) from t_friend
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByPrimaryKeySelective" parameterType="com.chauncey.blog.model.Friend">
+    update t_friend
+    <set>
+      <if test="blogaddress != null">
+        blogaddress = #{blogaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="blogname != null">
+        blogname = #{blogname,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="pictureaddress != null">
+        pictureaddress = #{pictureaddress,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.chauncey.blog.model.Friend">
+    update t_friend
+    set blogaddress = #{blogaddress,jdbcType=VARCHAR},
+      blogname = #{blogname,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      pictureaddress = #{pictureaddress,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+   <!--查询所有关注朋友-->
+  <select id="listFriendLink" resultType="com.chauncey.blog.model.Friend">
+    select * from t_friend;
+  </select>
+
+  <select id="getFriendByBlogAddress" parameterType="String" resultType="com.chauncey.blog.model.Friend">
+    select * from t_friend where blogaddress=#{blogaddress}
+  </select>
+
+
+</mapper>

@@ -1,0 +1,43 @@
+2020-10-01 23:13:37.551  INFO 1224 --- [restartedMain] com.chauncey.blog.BlogApplication        : Starting BlogApplication on DESKTOP-SL96S2J with PID 1224 (F:\javawork\blog\target\classes started by 24712 in F:\javawork\blog)
+2020-10-01 23:13:37.557 DEBUG 1224 --- [restartedMain] com.chauncey.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-01 23:13:37.559  INFO 1224 --- [restartedMain] com.chauncey.blog.BlogApplication        : No active profile set, falling back to default profiles: default
+2020-10-01 23:13:37.703  INFO 1224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-01 23:13:37.704  INFO 1224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-01 23:13:39.576  WARN 1224 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.chauncey.blog]' package. Please check your configuration.
+2020-10-01 23:13:40.202  INFO 1224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-01 23:13:40.218  INFO 1224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-01 23:13:40.219  INFO 1224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-01 23:13:40.222  INFO 1224 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2020-10-01 23:13:40.223  INFO 1224 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-10-01 23:13:40.223  INFO 1224 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-10-01 23:13:40.228  INFO 1224 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-10-01 23:13:40.335  INFO 1224 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-01 23:13:40.336  INFO 1224 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2631 ms
+2020-10-01 23:13:40.669  INFO 1224 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-01 23:13:40.760  INFO 1224 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-01 23:13:41.270  INFO 1224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-01 23:13:41.342  INFO 1224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-01 23:13:41.361  INFO 1224 --- [restartedMain] com.chauncey.blog.BlogApplication        : Started BlogApplication in 4.749 seconds (JVM running for 7.173)
+2020-10-01 23:34:08.403  INFO 17864 --- [restartedMain] com.chauncey.blog.BlogApplication        : Starting BlogApplication on DESKTOP-SL96S2J with PID 17864 (F:\javawork\blog\target\classes started by 24712 in F:\javawork\blog)
+2020-10-01 23:34:08.410 DEBUG 17864 --- [restartedMain] com.chauncey.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-01 23:34:08.410  INFO 17864 --- [restartedMain] com.chauncey.blog.BlogApplication        : The following profiles are active: dev
+2020-10-01 23:34:08.565  INFO 17864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-01 23:34:08.565  INFO 17864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-01 23:34:09.772  WARN 17864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.chauncey.blog]' package. Please check your configuration.
+2020-10-01 23:34:10.322  INFO 17864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-01 23:34:10.333  INFO 17864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-01 23:34:10.333  INFO 17864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-01 23:34:10.336  INFO 17864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2020-10-01 23:34:10.336  INFO 17864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-10-01 23:34:10.337  INFO 17864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-10-01 23:34:10.342  INFO 17864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2020-10-01 23:34:10.549  INFO 17864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-01 23:34:10.549  INFO 17864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1983 ms
+2020-10-01 23:34:10.842  INFO 17864 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-01 23:34:10.932  INFO 17864 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-10-01 23:34:11.475  INFO 17864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-01 23:34:11.537  INFO 17864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-01 23:34:11.554  INFO 17864 --- [restartedMain] com.chauncey.blog.BlogApplication        : Started BlogApplication in 4.09 seconds (JVM running for 6.274)
+2020-10-01 23:35:51.767  INFO 17864 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-01 23:35:51.767  INFO 17864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-01 23:35:51.803  INFO 17864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 36 ms

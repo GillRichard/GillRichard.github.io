@@ -1,0 +1,4 @@
+2020-10-01 10:56:51.315  INFO 6128 --- [restartedMain] com.chauncey.blog.BlogApplication        : Starting BlogApplication on DESKTOP-SL96S2J with PID 6128 (F:\javawork\blog\target\classes started by 24712 in F:\javawork\blog)
+2020-10-01 10:56:51.328  INFO 6128 --- [restartedMain] com.chauncey.blog.BlogApplication        : The following profiles are active: pro
+2020-10-01 10:56:53.211  WARN 6128 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.chauncey.blog]' package. Please check your configuration.
+2020-10-01 10:56:56.421  INFO 6128 --- [restartedMain] com.chauncey.blog.BlogApplication        : Started BlogApplication in 6.927 seconds (JVM running for 9.856)

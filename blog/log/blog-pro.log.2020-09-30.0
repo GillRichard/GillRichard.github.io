@@ -1,0 +1,58 @@
+2020-09-30 16:30:44.119  INFO 5484 --- [restartedMain] com.chauncey.blog.BlogApplication        : Starting BlogApplication on DESKTOP-SL96S2J with PID 5484 (F:\javawork\blog\target\classes started by 24712 in F:\javawork\blog)
+2020-09-30 16:30:44.119  INFO 5484 --- [restartedMain] com.chauncey.blog.BlogApplication        : The following profiles are active: pro
+2020-09-30 16:30:47.629  WARN 5484 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.chauncey.blog]' package. Please check your configuration.
+2020-09-30 16:30:49.899  WARN 5484 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to 'MybatisProperties' : prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'mybatis.type-aliases-super-type' to java.lang.Class<?>
+2020-09-30 16:30:49.919 ERROR 5484 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'mybatis.type-aliases-super-type' to java.lang.Class<?>:
+
+    Property: mybatis.type-aliases-super-type
+    Value: com.chauncey.blog
+    Origin: class path resource [application.yml]:9:28
+    Reason: No converter found capable of converting from type [java.lang.String] to type [java.lang.Class<?>]
+
+Action:
+
+Update your application's configuration
+
+2020-09-30 16:33:11.331  INFO 11328 --- [restartedMain] com.chauncey.blog.BlogApplication        : Starting BlogApplication on DESKTOP-SL96S2J with PID 11328 (F:\javawork\blog\target\classes started by 24712 in F:\javawork\blog)
+2020-09-30 16:33:11.340  INFO 11328 --- [restartedMain] com.chauncey.blog.BlogApplication        : The following profiles are active: pro
+2020-09-30 16:33:13.105  WARN 11328 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.chauncey.blog]' package. Please check your configuration.
+2020-09-30 16:33:14.422  WARN 11328 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to 'MybatisProperties' : prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'mybatis.type-aliases-super-type' to java.lang.Class<?>
+2020-09-30 16:33:14.452 ERROR 11328 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'mybatis.type-aliases-super-type' to java.lang.Class<?>:
+
+    Property: mybatis.type-aliases-super-type
+    Value: com.chauncey
+    Origin: class path resource [application.yml]:9:28
+    Reason: No converter found capable of converting from type [java.lang.String] to type [java.lang.Class<?>]
+
+Action:
+
+Update your application's configuration
+
+2020-09-30 16:35:36.049  INFO 15976 --- [restartedMain] com.chauncey.blog.BlogApplication        : Starting BlogApplication on DESKTOP-SL96S2J with PID 15976 (F:\javawork\blog\target\classes started by 24712 in F:\javawork\blog)
+2020-09-30 16:35:36.059  INFO 15976 --- [restartedMain] com.chauncey.blog.BlogApplication        : The following profiles are active: pro
+2020-09-30 16:35:37.596  WARN 15976 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.chauncey.blog]' package. Please check your configuration.
+2020-09-30 16:35:39.327  INFO 15976 --- [restartedMain] com.chauncey.blog.BlogApplication        : Started BlogApplication in 4.194 seconds (JVM running for 6.115)
+2020-09-30 16:37:25.339  INFO 10720 --- [restartedMain] com.chauncey.blog.BlogApplication        : Starting BlogApplication on DESKTOP-SL96S2J with PID 10720 (F:\javawork\blog\target\classes started by 24712 in F:\javawork\blog)
+2020-09-30 16:37:25.349  INFO 10720 --- [restartedMain] com.chauncey.blog.BlogApplication        : The following profiles are active: pro
+2020-09-30 16:37:26.649  WARN 10720 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.chauncey.blog]' package. Please check your configuration.
+2020-09-30 16:37:28.619  INFO 10720 --- [restartedMain] com.chauncey.blog.BlogApplication        : Started BlogApplication in 4.776 seconds (JVM running for 9.074)
+2020-09-30 16:38:14.375  INFO 8420 --- [restartedMain] com.chauncey.blog.BlogApplication        : Starting BlogApplication on DESKTOP-SL96S2J with PID 8420 (F:\javawork\blog\target\classes started by 24712 in F:\javawork\blog)
+2020-09-30 16:38:14.381  INFO 8420 --- [restartedMain] com.chauncey.blog.BlogApplication        : The following profiles are active: pro
+2020-09-30 16:38:15.587  WARN 8420 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.chauncey.blog]' package. Please check your configuration.
+2020-09-30 16:38:17.069  INFO 8420 --- [restartedMain] com.chauncey.blog.BlogApplication        : Started BlogApplication in 3.678 seconds (JVM running for 5.84)
